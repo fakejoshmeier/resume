@@ -1,0 +1,16 @@
+.aboutMe {
+	font-size: 1.5em;
+	padding: 1em;
+}
+
+.profilePic {
+	height: 13em;
+	float: left;
+	border-radius: 50%;
+	border: 0.4em solid black;
+}
+
+.profileText {
+	float: left;
+	word-wrap: normal;
+}

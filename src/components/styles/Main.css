@@ -9,3 +9,11 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+
+.infoContainer {
+	display: flex;
+}
+
+.projectContainer {
+	display: grid;
+}
