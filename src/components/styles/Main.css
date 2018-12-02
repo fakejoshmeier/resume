@@ -10,6 +10,24 @@
 	-webkit-box-sizing: border-box;
 }
 
+.meTab, .meTabS, .projTab, .projTabS {
+	width: 30vw;
+	height: 10em;
+	padding: none;
+	float:left;
+	border: solid grey;
+	border-top: none;
+}
+
+.meTab, .meTabS {
+	border-left: none;
+	border-right: none;
+}
+.meTabS, .projTabS {
+	background-color: transparent;
+	border-bottom: none;
+}
+
 .infoContainer {
 	display: flex;
 }
