@@ -10,22 +10,43 @@
 	-webkit-box-sizing: border-box;
 }
 
-.meTab, .meTabS, .projTab, .projTabS {
-	width: 30vw;
-	height: 10em;
+.tabBar {
+	width:100%;
+}
+
+.meTab, .meTabS, .projTab, .projTabS, .icons {
 	padding: none;
-	float:left;
 	border: solid grey;
 	border-top: none;
+	float: left;
+	font-size:2em;
+}
+
+.meTab, .meTabS, .projTab, .projTabS{
+	width: 38%;
+	height: 4em;
 }
 
 .meTab, .meTabS {
 	border-left: none;
 	border-right: none;
 }
+
 .meTabS, .projTabS {
 	background-color: transparent;
 	border-bottom: none;
+}
+
+.icons {
+	background-color:rgb(240, 240, 240);
+	border: none;
+	border-bottom: solid grey;
+	width: 24%;
+	height: 3.9em;
+}
+
+.linkIcon {
+	float: right;
 }
 
 .infoContainer {
