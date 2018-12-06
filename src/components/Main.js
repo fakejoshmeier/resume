@@ -55,15 +55,14 @@ class Main extends Component {
 		return (
 			<div className='mainContainer'>
 				<Header tab={ this.state.tab } callback={ () => this.changeTab() }/>
-				{this.state.tab === 1 ? "" :
+				{this.state.tab === 1 ? <AboutMe/> :
+					<div className='projectContainer'>
 					<ProjectList
-						projects={projects}
-						selected={this.state.selected}
-						callback={() => this.changeSelected()}
-					/>}
-				<main>
-					{ this.state.tab === 1 ? <AboutMe/> : <p>{this.state.selected}</p> }
-				</main>
+						projects={ projects }
+						selected={ this.state.selected }
+						callback={ (idx)  => this.changeSelected(idx) }
+					/>
+					</div>}
 			</div>
 		)
 	}

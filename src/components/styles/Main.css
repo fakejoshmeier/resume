@@ -2,9 +2,9 @@
 	background: rgb(255, 255, 255, .8);
 	border: 0.4em solid black;
 	height: 100%;
-	display: grid;
 	height: 80vh;
 	grid-template-rows: 1fr 10fr;
+	display: grid;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -54,5 +54,4 @@
 }
 
 .projectContainer {
-	display: grid;
 }

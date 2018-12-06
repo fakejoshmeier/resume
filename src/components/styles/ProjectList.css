@@ -1,0 +1,29 @@
+aside {
+	overflow-y: auto;
+	grid-row: 2 / 0;
+	grid-column: 0 / 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.listItem, .listItemS {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	margin: 0.8em;
+	padding: 0.15em 1em;
+	height: 5em;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0.25em 0.25em #444;
+}
+
+.listItem {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.listItemS {
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+}

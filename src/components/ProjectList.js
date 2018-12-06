@@ -13,9 +13,9 @@ const ProjectList = ({ projects, selected, callback }) => (
 		<div className='list'>
 			{ projects.map((project, idx) =>
 				<ListItem
-					project={project}
-					selected={idx === selected ? true : false}
-					callback={() => callback(idx)}
+					project={ project }
+					selected={ idx === selected ? true : false }
+					callback={ () => callback(idx) }
 				/>
 			)}
 		</div>
