@@ -41,6 +41,7 @@
 .icons {
 	display: flex;
 	align-items: center;
+	justify-content: space-evenly;
 	background-color:rgb(240, 240, 240);
 	border: none;
 	border-bottom: solid grey;
@@ -48,8 +49,14 @@
 	height: 3.9em;
 }
 
-.linkIcon {
-	float: right;
+.icons a {
+	color: black;
+	font-size: 3em;
+}
+
+.divider {
+	border-left: black solid 0.1em;
+	height: 3em;
 }
 
 .projectContainer {

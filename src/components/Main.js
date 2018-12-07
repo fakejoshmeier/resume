@@ -23,10 +23,16 @@ const projects = [
 const Header = ({ tab, callback }) => (
 	<header className='tabBar'>
 		<nav>
-		<button className={  tab === 1 ? 'meTabS' : 'meTab' } onClick={ tab === -1 ? () => callback() : 0 }>Josh Meier</button>
-		<button className={  tab === -1 ? 'projTabS' : 'projTab' } onClick={ tab === 1 ? () => callback() : 0 }>Projects</button>
+		<button className={ tab === 1 ? 'meTabS' : 'meTab' } onClick={ tab === -1 ? () => callback() : 0 }>{tab === 1 ? 'Josh Meier' : 'About Me'}</button>
+		<button className={ tab === -1 ? 'projTabS' : 'projTab' } onClick={ tab === 1 ? () => callback() : 0 }>Projects</button>
 		<span className='icons'>
-			<a className='linkIcon' icon={['fab', 'github-square']} href="https://github.com/fakejoshmeier"/> | <a className='linkIcon' icon={['fab', 'linkedin']} href="https://www.linkedin.com/in/joshua-meier2/"/>
+			<a href="https://github.com/fakejoshmeier" target='_blank' rel='noopener noreferrer'>
+				<FontAwesomeIcon icon={['fab', 'github-square']}/>
+			</a>
+			<div className='divider'/>
+			<a href="https://www.linkedin.com/in/joshua-meier2/" target='_blank' rel='noopener noreferrer'>
+				<FontAwesomeIcon icon={['fab', 'linkedin']}/>
+			</a>
 		</span>
 		</nav>
 	</header>
