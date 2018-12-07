@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import AboutMe from './AboutMe';
 import ProjectList from './ProjectList';
 
@@ -24,7 +26,7 @@ const Header = ({ tab, callback }) => (
 		<button className={  tab === 1 ? 'meTabS' : 'meTab' } onClick={ tab === -1 ? () => callback() : 0 }>Josh Meier</button>
 		<button className={  tab === -1 ? 'projTabS' : 'projTab' } onClick={ tab === 1 ? () => callback() : 0 }>Projects</button>
 		<span className='icons'>
-			<a className='linkIcon' href="https://github.com/fakejoshmeier">G</a> | <a className='linkIcon' href="https://www.linkedin.com/in/joshua-meier2/">L</a>
+			<a className='linkIcon' icon={['fab', 'github-square']} href="https://github.com/fakejoshmeier"/> | <a className='linkIcon' icon={['fab', 'linkedin']} href="https://www.linkedin.com/in/joshua-meier2/"/>
 		</span>
 		</nav>
 	</header>
@@ -62,6 +64,7 @@ class Main extends Component {
 						selected={ this.state.selected }
 						callback={ (idx)  => this.changeSelected(idx) }
 					/>
+					<p className='projectInfo'>{ projects[this.state.selected].description }</p>
 					</div>}
 			</div>
 		)

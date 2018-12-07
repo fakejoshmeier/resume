@@ -17,6 +17,7 @@ aside {
 	cursor: pointer;
 	overflow: hidden;
 	box-shadow: 0.25em 0.25em #444;
+	grid-column: 0/ 1;
 }
 
 .listItem {
@@ -26,4 +27,14 @@ aside {
 .listItemS {
 	background-color: rgba(0, 0, 0, .5);
 	color: white;
+}
+
+.projectInfo {
+	grid-column: 2;
+	background-color: rgba(255, 255, 255, .5);
+	margin-right: 0.8em;
+	border: solid #444;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
