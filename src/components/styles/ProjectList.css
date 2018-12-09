@@ -1,0 +1,40 @@
+aside {
+	overflow-y: auto;
+	grid-row: 2 / 0;
+	grid-column: 0 / 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.listItem, .listItemS {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	margin: 0.8em;
+	padding: 0.15em 1em;
+	height: 5em;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0.25em 0.25em #444;
+	grid-column: 0/ 1;
+}
+
+.listItem {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.listItemS {
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+}
+
+.projectInfo {
+	grid-column: 2;
+	background-color: rgba(255, 255, 255, .5);
+	margin-right: 0.8em;
+	border: solid #444;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+}

@@ -2,18 +2,65 @@
 	background: rgb(255, 255, 255, .8);
 	border: 0.4em solid black;
 	height: 100%;
-	display: grid;
 	height: 80vh;
 	grid-template-rows: 1fr 10fr;
+	display: grid;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
 
-.infoContainer {
+.tabBar {
+	grid-row: 1;
+	width:100%;
+}
+
+.meTab, .meTabS, .projTab, .projTabS, .icons {
+	padding: none;
+	border: solid grey;
+	border-top: none;
+	float: left;
+	font-size:2em;
+}
+
+.meTab, .meTabS, .projTab, .projTabS{
+	width: 38%;
+	height: 4em;
+}
+
+.meTab, .meTabS {
+	border-left: none;
+	border-right: none;
+}
+
+.meTabS, .projTabS {
+	background-color: transparent;
+	border-bottom: none;
+}
+
+.icons {
 	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color:rgb(240, 240, 240);
+	border: none;
+	border-bottom: solid grey;
+	width: 24%;
+	height: 3.9em;
+}
+
+.icons a {
+	color: black;
+	font-size: 3em;
+}
+
+.divider {
+	border-left: black solid 0.1em;
+	height: 3em;
 }
 
 .projectContainer {
+	grid-row: 2;
+	grid-template-columns: 25% auto;
 	display: grid;
 }
