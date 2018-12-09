@@ -23,7 +23,7 @@ const projects = [
 const Header = ({ tab, callback }) => (
 	<header className='tabBar'>
 		<nav>
-		<button className={ tab === 1 ? 'meTabS' : 'meTab' } onClick={ tab === -1 ? () => callback() : 0 }>{tab === 1 ? 'Josh Meier' : 'About Me'}</button>
+		<button className={ tab === 1 ? 'meTabS' : 'meTab' } onClick={ tab === -1 ? () => callback() : 0 }>{tab === 1 ? 'About Me' : 'Josh Meier'}</button>
 		<button className={ tab === -1 ? 'projTabS' : 'projTab' } onClick={ tab === 1 ? () => callback() : 0 }>Projects</button>
 		<span className='icons'>
 			<a href="https://github.com/fakejoshmeier" target='_blank' rel='noopener noreferrer'>

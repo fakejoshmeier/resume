@@ -9,17 +9,15 @@ const ListItem = ({ project, selected, callback }) => (
 )
 
 const ProjectList = ({ projects, selected, callback }) => (
-	<aside>
-		<div className='list'>
-			{ projects.map((project, idx) =>
-				<ListItem
-					project={ project }
-					selected={ idx === selected ? true : false }
-					callback={ () => callback(idx) }
-				/>
-			)}
-		</div>
-	</aside>
+	<div className='list'>
+		{ projects.map((project, idx) =>
+			<ListItem
+				project={ project }
+				selected={ idx === selected ? true : false }
+				callback={ () => callback(idx) }
+			/>
+		)}
+	</div>
 )
 
 export default ProjectList;
